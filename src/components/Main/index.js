@@ -1,10 +1,13 @@
 import React from 'react';
 import { Container, Content, Title, Sidebar, Navbar, Banner } from './styles'
 
+import Form from '../Form';
+
 
 export default function Main() {
   return (
     <div>
+      <Form />
       <Sidebar />
       <Container>
         <Navbar />
