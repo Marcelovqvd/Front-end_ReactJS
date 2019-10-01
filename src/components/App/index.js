@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-import '../../assets/styles/Shared.css';
+
 import Main from '../Main';
-import CarsList from '../CarsList';
+import GlobalStyles from '../../assets/styles/global';
 
 export default class App extends Component {
     render() {
         return (
             <div>
                 <Main />
-                <CarsList />
+                <GlobalStyles />
             </div>
         );
     }
