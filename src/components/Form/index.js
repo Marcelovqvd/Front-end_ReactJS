@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { FormStyled, List } from './styles';
-import { Container, Content, } from '../Main/styles';
 import api from '../../services/api';
 
 export default class Form extends Component {
@@ -27,7 +26,6 @@ export default class Form extends Component {
         <FormStyled onSubmit={this.handlesubmit}>
           <input type="text"
             placeholder="Pesquise por um veículo"
-            value={newCar}
             onChange={this.handleInputChange}
           />
           <button type="submit">Cadastrar</button>
@@ -37,7 +35,7 @@ export default class Form extends Component {
           {carList.map(car =>
             <li key={car.id}>
               <p>{car.title}</p>
-              <span>{car.title, car.brand, car.km}</span>
+              <span>`${car.title}, ${car.brand}, ${car.km}`</span>
               <p>{car.price}</p>
               <span>{car.year}</span>
             </li>
