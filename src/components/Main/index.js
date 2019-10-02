@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Content, Title, Sidebar, Navbar, Banner } from './styles'
+import { Container, Content, Sidebar, Navbar, Banner } from './styles'
 
 import Form from '../Form';
 
@@ -12,11 +12,9 @@ export default function Main() {
       <Container>
         <Navbar />
         <Content>
-          <Title>
-            <Banner>
-              Pesquisa de veículos do <span>TradersClub</span>
-            </Banner>
-          </Title>
+          <Banner>
+            Pesquisa de veículos do <span>TradersClub</span>
+          </Banner>
         </Content>
       </Container>
     </div>

@@ -17,3 +17,13 @@ export const FormStyled = styled.form`
   }
 `;
 
+export const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  li {
+    border: 1px solid white;
+  }
+`;
+

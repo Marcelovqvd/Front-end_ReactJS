@@ -4,31 +4,24 @@ const bgImage = require('../../assets/img/car-wireframe.png')
 
 export const Container = styled.div`
   position: absolute;
-  top: 0px;
+  top: 0;
   z-index: -1;
   display: flex;
   flex: 1;
   flex-direction: column;
   background-color: white;
   background-image: url(${bgImage});
-  background-size: 90% auto;
-  background-position: center 100px;
+  background-size: cover;
   background-repeat: no-repeat;
 `
 
 export const Content = styled.div`
-  padding: 40px 50px;
-  flex: 1;
+  padding: 160px 0;
   background-color: rgba(1, 19, 41, 0.88);
   overflow-y: auto;
-
-  > p {
+  p {
     margin: 0;
   }
-`
-
-export const Title = styled.h1`
-  margin-bottom: 30px;
 `
 
 const logoTC = require('../../assets/img/logo-tc.png');
@@ -54,7 +47,7 @@ export const Navbar = styled.form`
   background-color: #1a2533;
   display: flex;
 
-  > input {
+  input {
     background-color: transparent;
     border: solid 1.5px #fff;
     border-radius: 5px;
@@ -68,15 +61,9 @@ export const Navbar = styled.form`
     ::placeholder {
       color: #4d5b6d;
     }
-    ::-ms-input-placeholder {
-      color: #4d5b6d;
-    }
-    :-ms-input-placeholder {
-      color: #4d5b6d;
-    }
-
+   
   }
-  > button {
+  button {
     border: none;
     border-radius: 5px;
     background-color: #fff;
@@ -94,7 +81,7 @@ export const Banner = styled.h1`
   margin: 60px 0 60px;
   cursor: default;
 
-  > span {
+  span {
     display: inline;
     padding: 0 30px 0 20px;
     background-color: rgba(44, 70, 103, 0.6);
